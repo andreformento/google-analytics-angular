@@ -2,19 +2,23 @@
 <html ng-app="analytics">
 
 <head>
-	<title>Hello AngularJS</title>
+	<meta charset="utf-8">
+	<title>AngularJS - Google Analytics</title>
+	<meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+
 	<script src="angular.js"></script>
+
 	<script src="app.js"></script>
-	<script src="hello/hello.service.js"></script>
-	<script src="hello/hello.controller.js"></script>
+	<script src="constant/constant.js"></script>
+
+	<script src="report/report.service.js"></script>
+	<script src="report/report.controller.js"></script>
 </head>
 
 <body>
-	<div ng-controller="HelloController as vm">
-		<input type="button" ng-click="vm.sayHello();" value="Reload" />
-		<p>Object {{vm.greeting}}</p>
-		<p>The ID is {{vm.greeting.id}}</p>
-		<p>The content is {{vm.greeting.content}}</p>
+	<div ng-controller="ReportController as vm">
+		<input type="button" ng-click="vm.sayReport();" value="Reload" />
+		<p>Object {{vm.obj}}</p>
 	</div>
 </body>
 
