@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="analytics">
+
+<head>
+	<title>Hello AngularJS</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+	<script src="hello/hello.service.js"></script>
+	<script src="hello/hello.controller.js"></script>
+</head>
+
+<body>
+	<div ng-controller="HelloController as vm">
+		<input type="button" ng-click="vm.sayHello();" value="Reload" />
+		<p>Object {{vm.greeting}}</p>
+		<p>The ID is {{vm.greeting.id}}</p>
+		<p>The content is {{vm.greeting.content}}</p>
+	</div>
+</body>
+
+</html>

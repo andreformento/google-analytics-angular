@@ -1,2 +1,3 @@
-# google-analytics-angular
-Google API Analytics with Angular
+# Google API Analytics with Angular
+
+Open your browser with `index.html` file =D
