@@ -2,6 +2,6 @@
     'use strict';
 
     angular
-        .module('analytics', []);
+        .module('analytics', ['angular-google-gapi']);
 
 })();

@@ -6,7 +6,9 @@
 	<title>AngularJS - Google Analytics</title>
 	<meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
 
-	<script src="angular.js"></script>
+	<script type="text/javascript" src="lib/angular.js"></script>
+	<script type="text/javascript" src="lib/angular-google-gapi.js"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/client:platform.js"></script>
 
 	<script src="app.js"></script>
 	<script src="constant/constant.js"></script>
@@ -17,8 +19,8 @@
 
 <body>
 	<div ng-controller="ReportController as vm">
-		<input type="button" ng-click="vm.sayReport();" value="Reload" />
-		<p>Object {{vm.obj}}</p>
+		<input type="button" ng-click="vm.showReport();" value="Reload" />
+		<p>{{vm.obj}}</p>
 	</div>
 </body>
 

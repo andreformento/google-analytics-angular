@@ -10,18 +10,16 @@
     function ReportController(reportService) {
         var vm = this;
 
-        vm.sayReport = sayReport;
+        vm.showReport = showReport;
         vm.obj = {
             "message": "Wait a moment!"
         };
 
         (function initController() {
-            sayReport()
+            showReport()
         })();
 
-        function sayReport() {
-            console.log("say report function");
-
+        function showReport() {
             reportService
                 .getReport()
                 .then(
