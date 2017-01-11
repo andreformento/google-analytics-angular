@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "Google Analytics with Angular",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
   },
-  "engine": "node >=0.6.x"
+  "engine": "node >=0.6.x",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
