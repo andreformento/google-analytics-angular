@@ -1,1 +1,3 @@
-constant/constant.js
+public/constant/constant.js
+node_modules
+npm-debug.log

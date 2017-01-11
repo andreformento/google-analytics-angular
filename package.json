@@ -1,0 +1,9 @@
+{
+  "name": "google-analytics-angular",
+  "version": "0.0.1",
+  "description": "Google Analytics with Angular",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "engine": "node >=0.6.x"
+}
